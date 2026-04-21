@@ -31,8 +31,16 @@
 - > git restore test1.txt // Working directory’deki değişiklikleri son commit (veya staging) durumuna geri alır.
 - > git rm --cached test1.txt // Seçilen dosyayı staging alanından çıkarır
 
+## Commit
+
+- Staging area’daki değişikliklerin, bir mesaj (commit message) ile birlikte repository’nin versiyon geçmişine eklenmesidir.
+
 - > git commit -m "Git mesajı" // Commit yapar
 - > git log // Yapılan commitleri listeler
+
+## Branch (Dal)
+
+- Bir repository içinde, ana kodu etkilemeden farklı özelliklerin veya değişikliklerin bağımsız olarak geliştirildiği paralel geliştirme hattıdır. Kısaca aynı projenin kopyası ama ayrı bir çalışma hattı
 
 - > git branch // Hangi branchte olduğunu gösterir
 - > git branch chapter2 // Yeni branch oluşturur
