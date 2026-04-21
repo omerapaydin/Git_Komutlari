@@ -42,7 +42,8 @@
 
 - Bir repository içinde, ana kodu etkilemeden farklı özelliklerin veya değişikliklerin bağımsız olarak geliştirildiği paralel geliştirme hattıdır. Kısaca aynı projenin kopyası ama ayrı bir çalışma hattı
 
-- > git branch // Hangi branchte olduğunu gösterir
-- > git branch chapter2 // Yeni branch oluşturur
+- > git branch // Mevcut repository’deki tüm branch’leri listeler ve aktif branch’i gösterir.
+- > git branch chapter2 // chapter2 adında yeni bir branch oluşturur.
 - > git switch chapter2 // Seçilen branche girer
+
 - > git merge chapter2 // Chapter2 yi main ile birleştirdi
