@@ -82,7 +82,7 @@
 ## Reset
 
 - Reset, commit geçmişini geri sarar.
-- > git reset --hard HEAD~1 // Son commit’i tamamen siler. Dosyaları da eski haline getirir
+- > git reset --hard {CommitId} // Son commit’i tamamen siler. Dosyaları da eski haline getirir
 
 - A --- B --- C (HEAD)
 - > git reset --hard B // C commit’i yok olur
@@ -92,8 +92,14 @@
 ## Revert
 
 - Revert, commit’i silmez. Onun etkisini tersine çeviren yeni bir commit oluşturur
+- > git revert {CommitId}
 
 - A --- B --- C (HEAD)
 - > git revert C // A --- B --- C --- D
                                 ↑
                       D = C’yi geri alan commit
+
+* Push ettiysen → revert kullan
+* Local’deysen → reset kullanabilirsin
+
+---
