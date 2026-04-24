@@ -111,3 +111,26 @@
 - > git stash // Değişiklikleri gizli bir yere alır. Çalışma alanın temizlenir
 - > git stash apply // Değişiklikleri geri getirir (stash silinmez)
 - > git stash pop // Geri getirir + stash’i siler
+
+---
+
+## Bilgisayarındaki projeyi uzaktaki bir repo’ya (örn. GitHub) bağlamak.
+
+- > git remote add origin https://github.com/kullanici/proje.git // Link GitHub’daki repo’nun adresidir. Github'da Yeni repo oluşturulur. Adres kopyalanır
+
+- > git push -u origin main // Artık projeni GitHub’a gönderebilirsin
+
+---
+
+## Git Push
+
+- Local (senin bilgisayarındaki) commit’leri remote repo’ya (örn. GitHub) göndermek için kullanılır.
+- > git push -u origin main // Bu komutu bir kez çalıştırdıktan sonra
+- > git push // Artık yazman yeterli
+
+- Eğer remote’ta senden farklı commit varsa: push reddedilir. Önce:
+- > git pull // yapman gerekir
+
+---
+
+##
