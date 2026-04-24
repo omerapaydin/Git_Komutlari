@@ -1,4 +1,4 @@
-# Git Komutları
+# Git Version Control Komutları
 
 - Git - Version Control System (VCS)
 
