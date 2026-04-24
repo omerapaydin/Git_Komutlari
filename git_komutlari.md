@@ -141,3 +141,15 @@
 - Remote’taki değişiklikleri indirir
 - Ama senin local branch’ine dokunmaz
 - “Ne değişmiş?” diye bakarsın ama projeni bozmaz
+
+---
+
+## Git Pull
+
+- > git pull origin main
+- Hem indirir. Hem senin branch’inle birleştirir
+
+---
+
+- git fetch → “Ne var ne yok bakayım”
+- git pull → “Getir ve projeye uygula”
