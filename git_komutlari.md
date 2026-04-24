@@ -103,3 +103,11 @@
 * Local’deysen → reset kullanabilirsin
 
 ---
+
+## Stash
+
+- Çalışıyorsun ama branch değiştireceksin ya da acil başka işe geçmen lazım: Commit atmak istemiyorsun ama yaptığın değişiklikler de kaybolmasın.
+
+- > git stash // Değişiklikleri gizli bir yere alır. Çalışma alanın temizlenir
+- > git stash apply // Değişiklikleri geri getirir (stash silinmez)
+- > git stash pop // Geri getirir + stash’i siler
