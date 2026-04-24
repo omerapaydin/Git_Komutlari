@@ -70,3 +70,30 @@
   - Git “hangisi doğru?” diye sorar
   - buna merge conflict denir
 - Sen de manuel düzeltirsin.
+
+---
+
+## Commitler Arası Gezmek
+
+- > git checkout {gidilecek commit id} // Artık bir branch’te değilsin. Sadece geçmişte bir noktaya bakıyorsun
+
+---
+
+## Reset
+
+- Reset, commit geçmişini geri sarar.
+- > git reset --hard HEAD~1 // Son commit’i tamamen siler. Dosyaları da eski haline getirir
+
+- A --- B --- C (HEAD)
+- > git reset --hard B // C commit’i yok olur
+
+---
+
+## Revert
+
+- Revert, commit’i silmez. Onun etkisini tersine çeviren yeni bir commit oluşturur
+
+- A --- B --- C (HEAD)
+- > git revert C // A --- B --- C --- D
+                                ↑
+                      D = C’yi geri alan commit
