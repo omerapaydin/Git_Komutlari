@@ -8,6 +8,8 @@
 2. Staging Area → Commit’e hazırlık alanı
 3. Repository (Git history) → Commitlerin kaydedildiği yer
 
+---
+
 ## git config
 
 - Bu iki komutu yazmamızın sebebi, Git’e “bu commitleri kim yapıyor?” bilgisini vermektir
@@ -16,11 +18,15 @@
 * > git config --global user.name "Omer Apaydin"
 * > git config --global user.email omerapaydin90@gmail.com
 
+---
+
 ## Projeye Git eklemek
 
 - > git status // Working directory ve staging area’daki değişikliklerin mevcut durumunu gösterir.
 - > git init // Bulunulan dizini bir Git repository’sine dönüştürerek .git klasörünü oluşturur.
 - > rm -rf .git // Repository’ye ait tüm Git geçmişini ve yapılandırmasını silerek projeyi version control dışına çıkarır.
+
+---
 
 ## Staging Area
 
@@ -31,12 +37,16 @@
 - > git restore test1.txt // Working directory’deki değişiklikleri son commit (veya staging) durumuna geri alır.
 - > git rm --cached test1.txt // Seçilen dosyayı staging alanından çıkarır
 
+---
+
 ## Commit
 
 - Staging area’daki değişikliklerin, bir mesaj (commit message) ile birlikte repository’nin versiyon geçmişine eklenmesidir.
 
 - > git commit -m "Git mesajı" // Commit yapar
 - > git log // Yapılan commitleri listeler
+
+---
 
 ## Branch (Dal)
 
@@ -46,4 +56,17 @@
 - > git branch chapter2 // chapter2 adında yeni bir branch oluşturur.
 - > git switch chapter2 // Seçilen branche girer
 
+---
+
+## Merge
+
+- Farklı branch’lerde (dallar) yapılan değişiklikleri birleştirmek demektir.
+
 - > git merge chapter2 // Chapter2 yi main ile birleştirdi
+
+### Conflict (çatışma) konusu
+
+- Eğer aynı satırları iki branch’te farklı değiştirdiysen:
+  - Git “hangisi doğru?” diye sorar
+  - buna merge conflict denir
+- Sen de manuel düzeltirsin.
