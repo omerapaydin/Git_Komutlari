@@ -133,4 +133,11 @@
 
 ---
 
-##
+## Git Fetch
+
+- > git fetch origin
+
+- Sadece indirir (güvenli)
+- Remote’taki değişiklikleri indirir
+- Ama senin local branch’ine dokunmaz
+- “Ne değişmiş?” diye bakarsın ama projeni bozmaz
