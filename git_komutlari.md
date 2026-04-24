@@ -8,6 +8,8 @@
 2. Staging Area → Commit’e hazırlık alanı
 3. Repository (Git history) → Commitlerin kaydedildiği yer
 
+- HEAD = şu an bulunduğun commit/branch pointer’ı
+
 ---
 
 ## git config
@@ -145,6 +147,8 @@
 ---
 
 ## Git Pull
+
+- git pull = git fetch + git merge
 
 - > git pull origin main
 - Hem indirir. Hem senin branch’inle birleştirir
